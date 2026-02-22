@@ -10,6 +10,7 @@ import music
 
 alarm_on = False
 
+#Funksjon for Led lys
 def update_leds():
     if alarm_on:
         pin16.write_digital(1)  # blå: system aktivert
