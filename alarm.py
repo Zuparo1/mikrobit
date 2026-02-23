@@ -2,9 +2,9 @@ from microbit import *
 import music
 
 # PINNEBRUK:
+# Buzzer → P0
 # IR-sensor → P1
 # ADKeypad → P2 (analog)
-# Buzzer → P0
 # Rød LED → P8 (alarm)
 # Blå LED → P16 (system aktivert)
 
@@ -31,6 +31,7 @@ def read_button():
 
     return None
 
+# Hovedløkke som kjører hele tiden
 while True:
     btn = read_button()
 
